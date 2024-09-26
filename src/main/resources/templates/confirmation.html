@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<h2>Confirmation</h2>
+<p><strong>Name:</strong> <span th:text="${entry.name}"></span></p>
+<p><strong>Title:</strong> <span th:text="${entry.title}"></span></p>
+<p><strong>Age:</strong> <span th:text="${entry.age}"></span></p>
+<p><strong>Hometown:</strong>    <span th:text="${entry.hometown}"></span></p>
+
+<h3>Previous Entries</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Age</th>
+        <th>Hometown</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="entry : ${entries}">
+        <td th:text="${entry.name}"></td>
+        <td th:text="${entry.title}"></td>
+        <td th:text="${entry.age}"></td>
+        <td th:text="${entry.hometown}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
