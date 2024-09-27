@@ -23,8 +23,8 @@ Upon form submission, the data is displayed on a confirmation page along with a 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Sainath1554/SimpleEntryApp.git
-   cd SimpleEntryApp
+   git clone https://github.com/Sainath9999660/DataEntryApp.git
+   cd DataEntryApp
 
 2. Build and run the application(Make sure java and maven are installed and port 8080 is available
      ```bash
